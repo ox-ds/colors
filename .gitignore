@@ -1,6 +1,4 @@
-# .gitignore
-/dist
-test/
+dist
 *.css
-*.log
 node_modules
+*.log

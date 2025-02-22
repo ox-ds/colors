@@ -1,14 +1,3 @@
 /scripts
 /src
-/test
 .gitignore
-tsconfig.json
-package-lock.json
-dist/colors.cjs.development.js
-dist/colors.cjs.development.js.map
-dist/colors.cjs.production.min.js
-dist/colors.cjs.production.min.js.map
-dist/colors.esm.js
-dist/colors.esm.js.map
-dist/tsconfig.tsbuildinfo
-dist/build-css.js
