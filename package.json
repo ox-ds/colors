@@ -1,0 +1,51 @@
+{
+  "name": "@ox-ds/colors",
+  "version": "2.1.6",
+  "main": "dist/index.js",
+  "module": "dist/colors.esm.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/light.d.ts",
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./*.css": "./*.css"
+  },
+  "scripts": {
+    "start": "tsdx watch --tsconfig ./tsconfig.json",
+    "build": "tsdx build --tsconfig ./tsconfig.json && npm run build:css",
+    "build:css": "tsc -p scripts/tsconfig.build-css.json && node dist/build-css.js",
+    "test": "tsdx test --ci --maxWorkers=2 --passWithNoTests",
+    "lint": "tsdx lint src scripts",
+    "prepublishOnly": "npm run build",
+    "release": "standard-version && npm publish --access public"
+  },
+  "devDependencies": {
+    "babel-jest": "^29.7.0",
+    "standard-version": "^9.5.0",
+    "ts-node": "^10.9.2",
+    "tsdx": "^0.14.1",
+    "typescript": "^5.7.3"
+  },
+  "type": "commonjs",
+  "author": "Josh H, j-o.sh",
+  "description": "A uniquely simple color system.",
+  "size-limit": [
+    {
+      "path": "dist/oxds.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/oxds.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
