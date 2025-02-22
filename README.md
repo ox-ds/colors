@@ -1,3 +1,5 @@
+![Local Image](cover.png)
+
 # OxDS Colors
 
 **A uniquely simple color system.**
