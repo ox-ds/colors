@@ -7,13 +7,14 @@
   "license": "MIT",
   "files": [
     "dist/index.js",
+    "dist/colors.esm.js",
     "dist/index.d.ts",
     "dist/light.d.ts",
     "*.css"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.esm.js",
+      "import": "./dist/colors.esm.js",
       "require": "./dist/index.js",
       "default": "./dist/index.js"
     },
