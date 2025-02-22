@@ -26,7 +26,7 @@
     "test": "tsdx test --ci --maxWorkers=2 --passWithNoTests",
     "lint": "tsdx lint src scripts",
     "prepublishOnly": "npm run build",
-    "release": "standard-version && npm publish --access public"
+    "release": "standard-version --no-changelog && npm publish --access public"
   },
   "devDependencies": {
     "babel-jest": "^29.7.0",
