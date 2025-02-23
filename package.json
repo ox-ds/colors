@@ -2,6 +2,8 @@
   "name": "@ox-ds/colors",
   "author": "Josh H, j-o.sh",
   "description": "A uniquely simple color system.",
+  "keywords": ["colors", "oxds"],
+  "homepage": "https://oxds.uk/foundations/color",
   "version": "1.0.0-beta",
   "main": "dist/index.js",
   "module": "dist/index.js",
