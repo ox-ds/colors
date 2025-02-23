@@ -12,7 +12,7 @@
   "files": [
     "dist/index.js",
     "dist/index.d.ts",
-    "dist/light.d.ts",
+    "dist/colors.d.ts",
     "*.css"
   ],
   "exports": {
