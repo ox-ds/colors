@@ -1,9 +1,8 @@
-// scripts/build-css.js
 const fs = require('fs');
 const path = require('path');
 const { colors } = require('../dist/index.js');
 
-const outputDir = path.resolve(__dirname, '..'); // Root level
+const outputDir = path.resolve(__dirname, '..');
 
 function generateCSS(colorName, color) {
   const cssVariables = [];
